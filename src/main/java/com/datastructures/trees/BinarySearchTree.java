@@ -202,7 +202,6 @@ public class BinarySearchTree<T extends Comparable<T>> {
                     node.right = remove(node.right, tempNode.data);
                 }
         }
-
         return node;
     }
 
@@ -331,7 +330,6 @@ public class BinarySearchTree<T extends Comparable<T>> {
             }
         }
         return result;
-
     }
 
     /**
@@ -353,11 +351,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
             currentNode = currentNode.right;
         }
         return result;
-
     }
 
     /**
-     * Performs an iterative in postorder traversal.
+     * Performs an iterative postorder traversal.
      * @return List of elements in order visited by postorder traversal.
      */
     private List<T> postorderTraversal() {
